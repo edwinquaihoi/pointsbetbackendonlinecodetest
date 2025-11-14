@@ -40,5 +40,11 @@ namespace PointsBet_Backend_Online_Code_Test
             Assert.Equal("A", result5);
         }
 
+        [Fact]
+        public void TestToCommaSeparatedListWithNullList()
+        {
+            string result5 = StringFormatter.ToCommaSeparatedList(null, ",");
+            Assert.Equal("", result5);
+        }
     }
 }
